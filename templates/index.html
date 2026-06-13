@@ -1,30 +1,54 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
     <title>Kiosco Inteligente</title>
-    <!-- La ruta /static/ es vital para que FastAPI la encuentre -->
-    <link rel="stylesheet" href="/static/css/style.css">
+
+    <link rel="stylesheet"
+          href="/static/style.css">
+
 </head>
+
 <body>
-    <div class="contenedor">
-        <header>
-            <h1>KIOSCO INTELIGENTE</h1>
-            <p>Sistema de Reconocimiento Facial</p>
-        </header>
-        <section class="panel-central">
-            <div class="bienvenida">Bienvenido al Sistema</div>
-            <div class="botones">
-                <button class="btn-principal" onclick="window.location.href='/reconocimiento'">
-                    Iniciar Reconocimiento
-                </button>
-                <button class="btn-secundario" onclick="window.location.href='/registro'">
-                    Registrar Usuario
-                </button>
-            </div>
-        </section>
-        <footer>Instituto Tecnológico de Zitácuaro</footer>
+
+<div class="contenedor">
+
+    <div class="panel-izquierdo">
+
+        <h1>KIOSCO IA</h1>
+
+        <button onclick="window.location.href='/login'">
+            Ingresar
+        </button>
+
+        <button onclick="window.location.href='/registro'">
+            Registrar Usuario
+        </button>
+
+        <button onclick="window.location.href='/reconocimiento'">
+            Reconocimiento Facial
+        </button>
+
     </div>
+
+    <div class="panel-derecho">
+
+        <h2>Cámara en Tiempo Real</h2>
+
+        <div class="camara">
+
+            <img src="/video">
+
+        </div>
+
+    </div>
+
+</div>
+
 </body>
 </html>
