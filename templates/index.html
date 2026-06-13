@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiosco Inteligente</title>
+    <!-- La ruta /static/ es vital para que FastAPI la encuentre -->
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <h1>KIOSCO INTELIGENTE</h1>
+            <p>Sistema de Reconocimiento Facial</p>
+        </header>
+        <section class="panel-central">
+            <div class="bienvenida">Bienvenido al Sistema</div>
+            <div class="botones">
+                <button class="btn-principal" onclick="window.location.href='/reconocimiento'">
+                    Iniciar Reconocimiento
+                </button>
+                <button class="btn-secundario" onclick="window.location.href='/registro'">
+                    Registrar Usuario
+                </button>
+            </div>
+        </section>
+        <footer>Instituto Tecnológico de Zitácuaro</footer>
+    </div>
+</body>
+</html>
